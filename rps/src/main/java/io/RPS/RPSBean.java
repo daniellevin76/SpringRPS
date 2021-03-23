@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class RPSBean {
 
-    public static final String[] rps = {"ROCK", "PAPER", "SCISSOR"};
+    public static final String[] rps = {"ROCK", "PAPER", "SCISSORS"};
 
     public static String[] getRps() {
         return rps;
@@ -16,6 +16,6 @@ public class RPSBean {
 
     }
 
-    ResultObject result = new ResultObject();
+   
     
 }
