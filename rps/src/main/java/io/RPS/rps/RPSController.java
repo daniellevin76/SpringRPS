@@ -1,6 +1,9 @@
 package io.RPS.rps;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,6 +21,13 @@ public class RPSController {
     ArrayList<ResultBean> pvpWinnerList = new ArrayList<ResultBean>();
     int round = 0;
    
+    @RequestMapping(method =RequestMethod.GET, value = "date")
+    public String showDate(){
+        
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+     
+        return dateFormat.format(new Date());
+    }
     
     @RequestMapping(method = RequestMethod.POST, value = "pve")
     public ArrayList<ResultBean> postPvE(@RequestParam(defaultValue = "000") String input){
