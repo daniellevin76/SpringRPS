@@ -77,8 +77,10 @@
     <div class="col-sm-8 text-left"> 
       <h1>Welcome</h1>
       <hr>
-      <h3>Lets play Rock paper Scissors</h3>
-      
+      <h2>Lets play Rock paper Scissors</h2>
+
+
+      <h4>Play against computer</h4>
       
       <form action="http://localhost:888/pve" method="post">
         <label for="RPS">Make your choice:</label>
@@ -89,6 +91,28 @@
         </select>
         <button type="submit" class="btn btn-primary">GO!</button>
       </form>
+
+
+      <h4>Two players</h4>
+      
+      <form action="http://localhost:888/pvp" method="get">
+        <label for="RPS">First Player:</label>
+        <select id="frstinput" name="frstinput">
+          <option value="rock">Rock</option>
+          <option value="paper">Paper</option>
+          <option value="scissors">Scissors</option> 
+        </select>
+        <label for="RPS">Second Player:</label>
+        <select id="scndinput" name="scndinput">
+          <option value="rock">Rock</option>
+          <option value="paper">Paper</option>
+          <option value="scissors">Scissors</option> 
+        </select>
+        <button type="submit" class="btn btn-primary">GO!</button>
+      </form>
+
+
+
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
