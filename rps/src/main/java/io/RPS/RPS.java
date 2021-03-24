@@ -2,7 +2,7 @@ package io.RPS;
 
 import java.util.Random;
 
-public class RPSBean {
+public class RPS {
 
     public static final String[] rps = {"ROCK", "PAPER", "SCISSORS"};
 

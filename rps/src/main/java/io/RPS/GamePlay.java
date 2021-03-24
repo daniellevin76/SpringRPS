@@ -1,7 +1,8 @@
 package io.RPS;
 
-public class GamePlay {
 
+public class GamePlay {
+   
     public static String determineWinner(String frstInputStr, String scndInputStr){
 
         int frstInputInt = GamePlay.transformToInt(frstInputStr.toUpperCase());
@@ -41,13 +42,16 @@ public class GamePlay {
             case 0x02: // computer:scissors, player:paper
             case 0x10:
             case 0x21:
-                return "Second player wins\n";
+                return "Second player wins";
             case 0x01:
             case 0x12:
             case 0x20:
-                return "First player wins\n";
+                return "First player wins";
             default:
-                return "Invalid choice, try again\n";
+                return "Invalid choice, try again";
         }
     }
+
+
+   
 }
